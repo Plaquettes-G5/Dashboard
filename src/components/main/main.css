@@ -1,0 +1,22 @@
+.disposition {
+    margin-top: 50px;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.DispositionTATA {
+    margin-top: 50px;
+    margin-left: 50px;
+    justify-content: space-between;
+}
+
+.parameters-color {
+    background-color: #8AD2FA;
+}
+
+.link-card {
+    background-color: #8AD2FA;
+}
+.chips-style {
+    color: #FFEE00;
+}

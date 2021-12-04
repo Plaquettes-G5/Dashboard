@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wgh@300;400;700&display=swap');
+
+/*  Style de la scrollbars */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #004080;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8AD2FA;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8AD2FA;
+}
+
+/* Style général du dashboard */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.text-primary-p {
+  color: #FFEE00;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-title {
+  color: black;
+}
+
+.text-lightblue {
+  color: azure;
+}
+
+.text-red {
+  color : #8A0411;
+}
+
+.text-yellow {
+  color: #FFEE00;
+}
+
+.text-green {
+  color: #009B8F;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: 
+    "sidebar nav nav nav"
+    "sidebar main main main";
+}
+
+@media only screen and (max-width: 978px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+    "nav"
+    "main";
+  }
+}
